@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Cara Online Shopping{% endblock %}
+
+{% block content %}
+    <section id="hero">
+        <h4>Trade-in Offer</h4>
+        <h2>Super Value Deals</h2>
+        <h1>On All Products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button><a href="{{ url_for('shop') }}">Shop Now</a></button>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="{{ url_for('static', filename='img/features/f1.png') }}" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <!-- Add other feature boxes here -->
+    </section>
+
+    <!-- Add more sections as needed -->
+
+{% endblock %}

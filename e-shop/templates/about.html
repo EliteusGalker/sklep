@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+    <section id="page-header" class="about-header">
+        <h2>#knowUs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, adipisci! Non voluptas molestiae eligendi eum nulla.</p>
+    </section>
+
+    <section id="about-head" class="section-p1">
+        <img src="{{ url_for('static', filename='img/about/a6.jpg') }}" alt="About Image">
+        <div>
+            <h2>Who We Are?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis harum sequi, adipisci laudantium nemo ea iusto, illo facere inventore minus perferendis repellendus aut odit nulla animi quo quae ipsam non est reprehenderit laborum? Soluta veniam obcaecati consequuntur ex ad nisi fuga impedit ullam? Sunt quis voluptates eos tempora sapiente voluptatibus.</p>
+            <abbr title="">Create stunning image with as much or as little control as you like thanks to a choice of basic and Creative modes.</abbr>
+            <br><br>
+            <marquee bgcolor="#ccc" loop="-1" scrollamount="10" width="100%">
+                Create stunning image with as much or as little control as you like thanks to a choice of basic and Creative modes.
+            </marquee>
+        </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="{{ url_for('static', filename='img/features/f1.png') }}" alt="Feature 1">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="{{ url_for('static', filename='img/features/f2.png') }}" alt="Feature 2">
+            <h6>Save Time</h6>
+        </div>
+        <div class="fe-box">
+            <img src="{{ url_for('static', filename='img/features/f3.png') }}" alt="Feature 3">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="{{ url_for('static', filename='img/features/f4.png') }}" alt="Feature 4">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="{{ url_for('static', filename='img/features/f5.png') }}" alt="Feature 5">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="{{ url_for('static', filename='img/features/f6.png') }}" alt="Feature 6">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="newletter" class="section-p1 section-m1">
+        <div class="newtext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+{% endblock %}
